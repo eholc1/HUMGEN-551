@@ -1,0 +1,20 @@
+Copies of relevant files are located on Great Lakes in:
+/scratch/humgen551w26_class_root/humgen551w26_class/shared_data/HW8
+
+1. The file GD660.TrQuantRPKM.txt contains transcript-level quantification of expression levels
+across 660 samples. Using a python notebook, read this file into a suitable data structure and determine
+which transcript has the largest range in RPKM values across all samples. Using the file
+gencode.v12.annotation.gtf, determine the name of the corresponding gene. This can be
+done using Python or Unix commands, just describe what you did.
+
+2. Next, randomly pick a sample from the 660 listed samples to work with. For the example directions,
+I am using the first sample, HG00096.1.M_111124_6. Then:
+2.a Make a histogram of the RPKM counts for your sample in the Geuvadis data.
+2.b Convert RPKM values to TPM, and make a histogram of the TPM values
+2.c Make a scatter plot of TPM vs RPKM values
+
+3. Determine TPM values for your sample using kallisto.
+3.a Using the file E-GEUV-1.sdrf.txt, determine the locations for the RNAseq fastq files associated
+with your sample. Then, download them to an appropriate directory on Great Lakes using the unix
+wget command. This may take ~10+ minutes per file, depending on network load. To leave and come
+back, consider using the screen command (see documentation online), or you can just wait.
